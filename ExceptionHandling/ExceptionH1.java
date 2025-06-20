@@ -6,5 +6,11 @@ class ExceptionH1{
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Caught an ArrayIndexOutOfBoundsException: " + e.getMessage());
         } 
+        catch (Exception e) {
+            System.out.println("Caught a general exception: " + e.getMessage());
+        } 
+        finally {
+            System.out.println("This block always executes, regardless of an exception.");
+        }
     }
 }
